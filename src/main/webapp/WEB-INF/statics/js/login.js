@@ -23,7 +23,7 @@ var app = new Vue({
             }
             else
             {
-                return "女";
+                return "女1";
             }
         }
     },
