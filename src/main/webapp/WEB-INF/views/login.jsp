@@ -23,6 +23,9 @@
         <span v-bind:id="'nan' | sex ">
             {{ 'nv' | sex }}
         </span>
+        <span>
+            {{ reverseMessage }}
+        </span>
         <tolist></tolist>
         <button type="submit"  v-on:click="login">登录</button>
     </form>

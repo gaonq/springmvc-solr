@@ -27,6 +27,11 @@ var app = new Vue({
             }
         }
     },
+    computed:{
+      reverseMessage:function () {
+          return this.message.split("").reverse().join("");
+      }
+    },
     methods:{
         login:function () {
            return alert(this.message);
