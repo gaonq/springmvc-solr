@@ -24,6 +24,7 @@ var app = new Vue({
             else
             {
                 return "女";
+
             }
         }
     },
