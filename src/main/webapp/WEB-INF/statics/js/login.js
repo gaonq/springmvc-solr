@@ -33,6 +33,11 @@ var app = new Vue({
           return this.message.split("").reverse().join("");
       }
     },
+    watch:{
+        fullname:function () {
+
+        }
+    },
     methods:{
         login:function () {
            return alert(this.message);

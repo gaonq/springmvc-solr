@@ -26,6 +26,9 @@
         <span>
             {{ reverseMessage }}
         </span>
+        <span>
+            {{ $watch.fullname }}
+        </span>
         <tolist></tolist>
         <button type="submit"  v-on:click="login">登录</button>
     </form>
