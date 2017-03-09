@@ -30,12 +30,14 @@ var app = new Vue({
     },
     computed:{
       reverseMessage:function () {
-          return this.message.split("").reverse().join("");
+          alert('reverseMessage');
+          return this.password.split("").reverse().join("");
       }
     },
     watch:{
-        fullname:function () {
-
+        message:function () {
+            alert('message');
+            //this.message = 'watch';
         }
     },
     methods:{
