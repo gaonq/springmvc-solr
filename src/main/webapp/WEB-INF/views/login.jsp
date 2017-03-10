@@ -28,7 +28,8 @@
         <%--<span v-on:click="{{ fullname }}">--%>
             <%--测试的--%>
         <%--</span>--%>
-        <%--<tolist></tolist>--%>
+        <tolist></tolist>
+        <testtemplate message-Notify="这个是component"></testtemplate>
         <button type="submit"  v-on:click="login">登录</button>
     </form>
 </div>

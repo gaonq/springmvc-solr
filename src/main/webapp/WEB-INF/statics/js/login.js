@@ -1,6 +1,11 @@
 /**
  * Created by gaonq on 2017/3/6.
  */
+
+
+Vue.component('tolist',{
+    template: '<li>This is a todo</li>'
+})
 var app = new Vue({
     el: '#app',
     data:{
@@ -33,6 +38,12 @@ var app = new Vue({
           alert('reverseMessage');
           return this.password.split("").reverse().join("");
       }
+    },
+    components:{
+        testtemplate: {
+            props:['messageNotify'],
+            template: '<div>A custom component! {{ messageNotify }}</div>'
+        }
     },
     watch:{
         message:function () {
@@ -69,8 +80,4 @@ var app = new Vue({
     destroyed:function () {
        // alert('vue is destroyed')
     }
-})
-
-Vue.component('tolist',{
-    template: '<li>This is a todo</li>'
-})
+});
